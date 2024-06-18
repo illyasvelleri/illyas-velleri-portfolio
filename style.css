@@ -736,9 +736,11 @@
   border-radius: 30px;
 
 }
-/* #carouselExampleControls .carousel-item .carousel-item figure{
-  
-} */
+.carousel-indicators{
+  color: var(---gold);
+  background-color: var(---blue-1);
+  border-radius: 15px;
+}
 /*footer*/
 
 footer {
