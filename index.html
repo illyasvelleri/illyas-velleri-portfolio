@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!----font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Unicons CSS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!-- Include AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!----bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>ILLYAS</title>
+</head>
+
+<body id="body">
+
+
+  <!-------navigation bar-->
+
+  <nav class="navbar navbar-expand-lg mb-4 fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ILLYAS</a>
+      <!---music-->
+      <audio id="myAudio" autoplay loop>
+        <source src="music/perfect-beauty-191271.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <!----end-->
+      <form class="d-flex">
+        <button class="btn music-btn" type="button" onclick="toggleMusic()"><i
+            class="fa-solid fa-headphones"></i></button>
+      </form>
+      <button class="navbar-toggler shadow-none outline-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbarExample-expand-lg" aria-controls="offcanvasNavbarExample-expand-lg">
+        <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-lg"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-dark" data-bs-hideresize="true" tabindex="-1"
+        id="offcanvasNavbarExample-expand-lg" aria-labelledby="offcanvasNavbarExample-expand-lg">
+        <div class="offcanvas-header shadow">
+          <h5 class="offcanvas-title" id="offcanvasLabel">ILLYAS</h5>
+          <button type="button" class="btn-close text-reset shadow-none outline-0" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center justify-content-center flex-grow-1">
+            <li class="nav-item me-2">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+          </ul>
+          <!---music-->
+          <audio id="myAudio" autoplay loop>
+            <source src="music/perfect-beauty-191271.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <!----end-->
+          <form class="d-flex">
+            <button class="btn" type="button" onclick="toggleMusic()"><i class="fa-solid fa-headphones"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!---hero-->
+  <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+    <div class="container-fluid hero py-5">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text her1">
+            <p class="mb-3">Illyas Velleri <span> 22</span></p>
+            <div class="animation-container">
+              <h1 class="display-3 pb-3">Full Stack <span id="role1"></span> & <span id="role2"></span>.</h1>
+            </div>
+            <p>"I want to do something creative & work for the web"</p>
+            <form class="social pt-3">
+              <a href="https://api.whatsapp.com/send?phone=8129067460&text=Hello%20there!" target="_blank"
+                class="btn me-2">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/illyasvelleri/" target="_blank" class="btn me-2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/illyasvelleri/" target="_blank" class="btn me-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+
+            </form>
+            <section class="my-3 avatar-container">
+              <p class="text-center px-2 mt-4">New connections</p>
+              <ul class="avatar-list ps-3">
+                <li class="avatar-item">
+                  <img class="rounded-circle border border-2 border-light" src="img/z-y-d.jpg" alt="" height="40">
+                </li>
+                <li class="avatar-item">
+                  <img class="rounded-circle border border-2 border-light" src="img/boy.jpg" alt="" height="40">
+                </li>
+                <li class="avatar-item">
+                  <img class="rounded-circle border border-2 border-light" src="img/saleel.jpg" alt="" height="40">
+                </li>
+                <li class="avatar-item">
+                  <img class="rounded-circle border border-2 border-light" src="img/jumail.jpg" alt="" height="40">
+                </li>
+                <li class="avatar-item">
+                  <img class="rounded-circle border border-2 border-light" src="img/boy2.jpg" alt="" height="40">
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <p class="Check-out-link">Check out my laitest work <span class="btn"><a href="#">Click here</a></span></button></p>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---about-->
+
+  <section class="my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" id="about">
+    <div class="container-fluid services grid-content p-2">
+      <div class="container">
+        <div class="about-container">
+          <div class="header">
+            <span class="icon">
+              <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </span>
+            <p class="alert">Who am i?</p>
+          </div>
+
+          <p class="message m-auto mx-2">
+            At 22, I am a skilled web developer with expertise in Bootstrap, Node.js, Express, and React. While I may
+            lack formal certifications, my strength lies in creating memorable, responsive websites that exceed
+            expectations. I prioritize practical skills and hands-on experience over credentials, ensuring every
+            project I undertake is innovative and user-friendly. With a passion for continuous learning and adapting
+            to new technologies, I deliver impactful digital solutions tailored to client needs.
+          </p>
+
+          <div class="actions">
+            <a class="mark-as-read" href="https://api.whatsapp.com/send?phone=8129067460&text=Hello%20there!"
+              target="blank">
+              Hire me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="app-type-container py-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+    <div class="container my-5">
+      <div class="app-types">
+        <h2 class="mb-4">The framework of your choice..</h2>
+
+        <div class="row p-4 m-1 shadow-lg">
+          <div class="col-md-4">
+            <h5>Dynamic Websites</h5>
+            <p>These websites generate content dynamically based on user interaction or inputs, using server-side
+              scripting to create web pages in real-time.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Single Page Applications (SPAs)</h5>
+            <p>These applications load a single HTML page and dynamically update content, providing a responsive user
+              experience similar to desktop applications.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Server-Side Applications</h5>
+            <p>
+              These applications generate HTML on the server for each request, improving SEO and initial load times when
+              sent to the client.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!----skill-->
+  <section class="skills" id="services">
+    <div class="container-fluid  my-3 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 img-row">
+            <div class="img-container">
+              <img src="img/Programming-bro.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 skill-header">
+            <h4>Design Your Digital Future</h4>
+            <p>I always aim to give you the best value for you and your digital presence.</p>
+
+            <!------>
+            <div class="row mt-5">
+              <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="skill-container shadow-lg">
+                  <div class="icon shadow-lg">
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <div class="skill-body">
+                    <h5>Web Development</h5>
+                    <p>Creating robust websites that deliver exceptional user experiences.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="skill-container shadow-lg">
+                  <div class="icon shadow-lg">
+                    <i class="fa-solid fa-paint-brush"></i>
+                  </div>
+                  <div class="skill-body">
+                    <h5>Web Designing</h5>
+                    <p>Designing beautiful and functional interfaces for modern websites.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="skill-container shadow-lg">
+                  <div class="icon shadow-lg">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <div class="skill-body">
+                    <h5>Graphic Designing</h5>
+                    <p>Creating stunning visuals that capture your brand's essence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="skill-container shadow-lg">
+                  <div class="icon shadow-lg">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </div>
+                  <div class="skill-body">
+                    <h5>Digital Marketing</h5>
+                    <p>Boosting your online presence through strategic marketing campaigns.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-5 py-5 tech-container">
+    <p class="text-center my-5">My fingers empower you to develop high-quality web applications using the
+      robust capabilities of React
+      components.</p>
+    <div class="techs d-flex align-items-center">
+      <li><i class="fa-brands fa-react"></i></li>
+      <li><i class="fa-brands fa-bootstrap"></i></li>
+      <li><i class="fa-brands fa-css3-alt"></i></li>
+      <li><i class="fa-brands fa-js"></i></li>
+      <li><i class="fa-brands fa-node"></i></li>
+    </div>
+  </section>
+
+
+  <!------------>
+
+  <section class="my-5">
+    <div class="container-fluid">
+      <div class="container py-5">
+        <div class="row m-auto">
+          <div class="col carousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- testimonial -->
+                <div class="carousel-item active" id="carousel-item">
+                  <figure class="relative w-64 overflow-hidden border p-4 m-auto">
+                    <div class="flex flex.row item-center gap-2">
+                      <img src="img/z-y-d.jpg" class="rounded-circle d-block mb-3" width="32" alt="Customer 1">
+                      <div class="d-md-block">
+                        <figcaption class="text-xs font-medium my-2">Z_Y_D Shammas</figcaption>
+                        <p class="text-xs font-medium text-secondary">"His work is phenomenal! I'm thrilled with the
+                          results—a truly exceptional developer and designer."</p>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <!-- testimonial -->
+                <div class="carousel-item" id="carousel-item">
+                  <figure class="relative w-64 overflow-hidden border p-4">
+                    <div class="flex flex.row item-center gap-2">
+                      <img src="img/saleel.jpg" class="rounded-circle d-block" width="32" alt="Customer 1">
+                      <div class="d-md-block">
+                        <figcaption class="text-sm font-medium my-2">Saleel munduparamba</figcaption>
+                        <p class="text-xs font-medium text-secondary">"Exceptional skills in full-stack development and
+                          design. Meticulous attention to detail and innovative problem-solving."</p>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <!-- testimonial -->
+                <div class="carousel-item" id="carousel-item">
+                  <figure class="relative w-64 overflow-hidden border p-4">
+                    <div class="flex flex.row item-center gap-2">
+                      <img src="img/jumail.jpg" class="rounded-circle d-block" width="32" alt="Customer 1">
+                      <div class="d-md-block">
+                        <figcaption class="text-sm font-medium my-2">Hfz_jumail</figcaption>
+                        <p class="text-xs font-medium text-secondary">"Impressed with the creativity and meticulous
+                          attention to detail. Exceeded our expectations with precision."</p>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <section></section>
+  <section class="mt-5">
+    <footer>
+      <div class="container-fluid">
+        <div class="conatiner py-5">
+          <div class="social-container">
+            <form class="social">
+              <a href="https://api.whatsapp.com/send?phone=8129067460&text=Hello%20there!" target="_blank"
+                class="btn me-2">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/illyasvelleri/" target="_blank" class="btn me-2">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/illyasvelleri/" target="_blank" class="btn me-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </form>
+          </div>
+          <div class="container mt-4">
+            <p class="Copyright">Copyright @2024 | Designed With by <a href="illyasvelleri.in">Illyas Velleri</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init();
+  </script>
+
+  <!---js links-->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
